@@ -11,7 +11,7 @@ Index.
 6. Common Factors (commonFactors) - Factors Of Inputted Number.
 7. Pythagorean Theorem Solver (pythagSolver) - Solves Pythagorean Theorem.
 8. Factorial Function (factorial) - Factorialzation Of A Inputted Number.
-9. Perfect Square Root (perfectSqrt) - Returns
+9. Perfect Square Root (perfectSqrt) - Returns Perfect Square Root Numbers.
 10. Quadratic Equation Solver (quad) - Solves Quadratic Equations.
 11. Testing Area (main) - Testing All Of These Functions.
 */
