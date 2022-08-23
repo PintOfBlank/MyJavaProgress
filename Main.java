@@ -1,4 +1,3 @@
-import java.time.chrono.MinguoDate;
 import java.util.*;
 
 /*
@@ -13,7 +12,7 @@ Index.
 7. Pythagorean Theorem Solver (pythagSolver) - Solves Pythagorean Theorem.
 8. Factorial Function (factorial) - Factorialzation Of A Inputted Number.
 9. Perfect Square Root (perfectSqrt) - Returns
-10. Quadratic Equation Solver (quad) - Solves Quadratic Equations. -- Work In Progress --
+10. Quadratic Equation Solver (quad) - Solves Quadratic Equations.
 11. Testing Area (main) - Testing All Of These Functions.
 */
 
@@ -191,17 +190,31 @@ public class Main {
     }
 
     //@10
-    public static int[] quad(int a, int b, int c) {
-        int[] rr = new int[2];
-
-
-
+    public static ArrayList<Double> quad(double a, double b, double c) {
+        ArrayList<Double> rr = new ArrayList<>();
+        double var1 = b*-1;
+        double var2 = b*b;
+        var2 = Math.abs(var2);
+        double var3 = 4*a*c;
+        double var4 = 2*a;
+        var2 = var2-var3;
+        if (0 > var2) {
+            return null;
+        }
+        var2 = Math.sqrt(var2);
+        double fr = var1-var2;
+        fr = fr/var4;
+        rr.add(fr);
+        double sr = var1+var2;
+        sr = sr/var4;
+        rr.add(sr);
         return rr;
     }
 
     //@11
     public static void main(String[] args) {
         System.out.println(pythagSolver(4, 5, "cos"));
-        System.out.println();
+        System.out.println(quad(6, 17, 12));
     }
 }
+
