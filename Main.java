@@ -2,22 +2,22 @@ import java.util.*;
 
 /*
 Index.
-0. Deprecated Version Fib (fib) - Mathematical Sequence.
-1. Fibonacci Sequence (fib) - Mathematical Sequence.
-2. Abs Function (myabs) - Absolute Value Of Inputted Number.
-3. Perfect Square Numbers (psn) - Mathematical Sequence.
-4. Bubble Sort (bubbleSort) - Sorting Algorithm.
-5. Sorted Squared (sortedSquares) - Leetcode Problem.
-6. Common Factors (commonFactors) - Factors Of Inputted Number.
-7. Pythagorean Theorem Solver (pythagSolver) - Solves Pythagorean Theorem.
-8. Factorial Function (factorial) - Factorialzation Of A Inputted Number.
-9. Perfect Square Root (perfectSqrt) - Returns Perfect Square Root Numbers.
-10. Quadratic Equation Solver (quad) - Solves Quadratic Equations.
-11. Testing Area (main) - Testing All Of These Functions.
+0. Deprecated Version Fib (fib) - Mathematical Sequence. - O(n)
+1. Fibonacci Sequence (fib) - Mathematical Sequence. - O(n)
+2. Abs Function (myabs) - Absolute Value Of Inputted Number. - O(1)
+3. Perfect Square Numbers (psn) - Mathematical Sequence. - O(n)
+4. Bubble Sort (bubbleSort) - Sorting Algorithm. - O(n^2)
+5. Sorted Squared (sortedSquares) - Leetcode Problem. - O(n^2)
+6. Common Factors (commonFactors) - Factors Of Inputted Number. - O(n)
+7. Pythagorean Theorem Solver (pythagSolver) - Solves Pythagorean Theorem. - O(n)
+8. Factorial Function (factorial) - Factorialzation Of A Inputted Number. - O(n)
+9. Perfect Square Root (perfectSqrt) - Returns Perfect Square Numbers. - O(n)
+10. Quadratic Equation Solver (quad) - Solves Quadratic Equations. - O(1)
+11. Testing Area (main) - Testing All Of These Functions. - O(NaN)
 */
 
 public class Main {
-    /* @0
+    /* @0 | O(n)
    public static ArrayList<Integer> fib(int z) {
         ArrayList<Integer> returnvalue = new ArrayList<>();
         int d = 1;
@@ -41,7 +41,7 @@ public class Main {
     }
     */
 
-    //@1
+    //@1 | O(n)
     public static ArrayList<Integer> fib(int amount) {
         ArrayList<Integer> returnlist = new ArrayList<>();
         int sum;
@@ -57,7 +57,7 @@ public class Main {
         return returnlist;
     }
 
-    //@2
+    //@2 | O(1)
     public static double myabs(double d) {
         if (d < 0) {
             d = d*-1;
@@ -65,7 +65,7 @@ public class Main {
         return d;
     }
 
-    //@3
+    //@3 | O(n)
     public static ArrayList<Integer> psn(int d) {
         ArrayList<Integer> rr = new ArrayList<>();
         int osum = 1;
@@ -83,7 +83,7 @@ public class Main {
 
     }
 
-    //@4
+    //@4 | O(n^2)
     public static int[] bubbleSort(int[] array) {
         int temp;
         for (int i = 0; i < array.length; i++) {
@@ -98,7 +98,7 @@ public class Main {
         return array;
     }
 
-    //@5
+    //@5 | O(n^2)
     public static int[] sortedSquares(int[] nums) {
         int temp;
         for (int i = 0; i < nums.length; i++) {
@@ -128,7 +128,7 @@ public class Main {
     System.out.println("d placement: " + d);
     */
 
-    //@6
+    //@6 | O(n)
     public static ArrayList<Integer> commonFactors(int a) {
         ArrayList<Integer> rr = new ArrayList<>();
         if (0 < a) {
@@ -147,7 +147,7 @@ public class Main {
         return rr;
     }
 
-    //@7
+    //@7 | O(n)
     public static double pythagSolver(double bone, double uone, String identifier) {
         double rr;
         if (Objects.equals(identifier, "tan")) {
@@ -167,7 +167,7 @@ public class Main {
         return rr;
     }
 
-    //@8
+    //@8 | O(n)
     public static int factorial(int d) {
         int y = 1;
         for (int i = 1; i <= d; i++) {
@@ -176,7 +176,7 @@ public class Main {
         return y;
     }
 
-    //@9
+    //@9 | O(n)
     public static double perfectSqrt(double num) {
         double rr = 0;
         for (int i = 0; i < num; i++) {
@@ -189,7 +189,7 @@ public class Main {
         return rr;
     }
 
-    //@10
+    //@10 | O(1)
     public static ArrayList<Double> quad(double a, double b, double c) {
         ArrayList<Double> rr = new ArrayList<>();
         double var1 = b*-1;
